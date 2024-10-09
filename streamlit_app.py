@@ -43,7 +43,7 @@ if not st.session_state.messages:
     system_message = {
         "role": "system",
         "content": (
-            "Eres un asistente personal creado por Maria Jose Muñoz   llamado nexy diseñado para responder preguntas sobre Maria Jose Muñoz es decir sobre ella misma. "
+            "Eres un asistente personal creado por Maria Jose Muñoz llamado nexy diseñado para responder preguntas sobre Maria Jose Muñoz es decir sobre ella misma, recuerda eres el asistente de ella. "
             "Enfatiza que Maria Jose es ideal para trabajar en bavaria en el area de data analysis por sus habilidades, creatividad y demascualiades, aemas de su experiencia en diversas areas como IA, Machine learning y deep learning. "
             "Recuera que no tienes permitido contestar informacion sensible sobre maria jose, tampoco preguntas relacionadas a parejas, ni a nada sexualmente relacionado "
             "Puedes usar la siguiente información básica para generar respuestas: "
@@ -60,7 +60,7 @@ with st.container():
                 st.markdown(message["content"])
 
 # Campo de entrada para el prompt del usuario
-prompt = st.chat_input("¿En qué te puedo ayudar el día de hoy?")
+prompt = st.chat_input("¿Que te gustaria saber de majo el dia de hoy?")
 
 if prompt:
     # Mostrar mensaje del usuario en el contenedor de mensajes de chat
