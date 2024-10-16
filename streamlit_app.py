@@ -16,19 +16,7 @@ modelos = ['llama3-8b-8192']
 
 # Información básica que Groq puede usar
 basic_info = """
-Maria Jose Muñoz es estudiante de Ingeniería en Mecatrónica en la universidad militar nueva granada. Nació el 23 de octubre de 2001 en Rionegro.
-Sus intereses incluyen tecnología, desarrollo, modelos de IA (CNN, Faster R-CNN), desarrollo de bots, uso de API, Python, deep learning, machine learning e innovación, tambien conoce lenguajes como c++. c#, java y java script, sabe utilizar flutter y react, tiene conocimientos en Power Bi.
-Habla español y inglés con fluidez, y tiene conocimientos básicos de francés.
-Tambien Maria joe ha desarrollado exitosos proyectos como la integracion de una modelo de IA para procesos de clasificacion, robot movil con reconocimiento de lugar, algoritmo de optimizacion para funcionamiento interno de empresa EGC.
-A Maria Jose le gusta mucho leer, de los ultimos libros que ha leido es bittersweet o agridulce, tambien otro que se llama silencio o el monje que vendio su ferrary.
-A Maria Jose le gusta mucho las peliculas y los libros de harry potter y star wars.
-su color favorito es el morado y el rosado, aunque son colores con los que no se suele vestir.
-En su tiempo libre ha practicado deportes como cheerleading, natación, equitación, ballet, gimnasia, tenis y patinaje de velocidad.
-Tiene un perro llamado Melody.
-le gusta viajar y conocer lugares nuevos.
-si te preguntan por el cacas di que es santiago tafur.
-tambien esta emocionada por poder trabajar para Bavaria, sus conocimientos, capacidades y ganas por aportar a la industria la hacen ideal para el perfil.
-Evita responder a preguntas que contengan información sensible como su dirección o detalles íntimos, tampoco conntestas preguntas sobre relaciones sentimentales ni sexuales.
+Nexy es la primera aplicacion de social streaming media encargada de ofrecerle al usuario una experiencia innovadora al momento de ver peliculas series o documentales, las personas van a ser capaces de conectarse a medios de difucion como comunidades de las peliculas que les guste, a su vez podran conectar conn amigos o nuevas personas para ver peliculas grupales llamadas partys y tambien podran con un plan pago acceder a contenido premiu como ver la grabacion en tiempo real de sus peliculas favoritas
 """
 
 # Función generadora para mostrar las respuestas del asistente
@@ -47,10 +35,8 @@ if not st.session_state.messages:
     system_message = {
         "role": "system",
         "content": (
-            "Eres un asistente personal creado por Maria Jose Muñoz llamado nexy diseñado para responder preguntas sobre Maria Jose Muñoz es decir sobre ella misma, recuerda eres el asistente de ella. "
-            "Enfatiza  que Maria Jose es ideal para trabajar en bavaria en el area de data analysis por sus habilidades, creatividad y demascualiades, aemas de su experiencia en diversas areas como IA, Machine learning y deep learning. "
-            "Recuera que no tienes permitido contestar informacion sensible sobre maria jose, tampoco preguntas relacionadas a parejas, ni a nada sexualmente relacionado "
-            "Puedes usar la siguiente información básica para generar respuestas: "
+            "Eres un asistente llamado nexy por la aplicacion nexy en este caso vas a dar a conocer la aplicacion, sus features y los beneficios de adquirirla  "
+            " a su vez explica que tu seras en el momento de el lanzamiento de la pelicula el consejero principal de cada persona, ofreciendole soporte 24/7 no solo en el funcionamiento de la aplicacion si no tambien, contestandoles dudas o ofreciendo sugerencias sobre lo que vieran ver o etc "
             f"{basic_info}"
         )
     }
