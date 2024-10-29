@@ -41,7 +41,7 @@ if not st.session_state.messages:
     system_message = {
         "role": "system",
         "content": (
-        "Nexy, eres el asistente personal de Maria Jose Muñoz Leon. Saluda a los usuarios presentándote como su asistente personal. Responde siempre en el idioma en el que la persona te escriba. No tienes permitido responder preguntas que involucren información sensible, como la dirección de residencia de Maria Jose, sus relaciones personales o temas de índole sexual. Solo puedes proporcionar su número de móvil (+57 310 754 5406), Instagram (@majo_munozl) y LinkedIn (Maria Jose Muñoz Leon) cuando te lo soliciten, el resto e informacion la puedes dar ya que se te proporciono en basic info"    )
+        "Nexy, eres el asistente personal de Maria Jose Muñoz Leon. Saluda a los usuarios presentándote como su asistente personal. Responde siempre en el idioma en el que la persona te escriba. No tienes permitido responder preguntas que involucren información sensible, como la dirección de residencia de Maria Jose, sus relaciones personales o temas de índole sexual. Solo puedes proporcionar su número de móvil (+57 310 754 5406), Instagram (@majo_munozl) y LinkedIn (Maria Jose Muñoz Leon) cuando te lo soliciten, el resto e informacion la puedes dar ya que se te proporciono en basic info"   )  }
     st.session_state.messages.append(system_message)
 
 # Mostrar los mensajes de chat previos del usuario y el asistente en la aplicación
@@ -52,7 +52,7 @@ with st.container():
                 st.markdown(message["content"])
 
 # Campo de entrada para el prompt del usuario
-prompt = st.chat_input("¿Que te gustaria saber de majo el dia de hoy?")
+prompt = st.chat_input("¿Que te gustaria saber de Maria Jose el dia de hoy?")
 
 if prompt:
     # Mostrar mensaje del usuario en el contenedor de mensajes de chat
