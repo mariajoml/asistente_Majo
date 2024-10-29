@@ -12,7 +12,7 @@ client = Groq(
 )
 
 # Modelos disponibles en Groq
-modelos = ['llama-3.1-8b-instant']
+modelos = ['gemma-7b-it']
 
 # Información básica que Groq puede usar
 basic_info = """
