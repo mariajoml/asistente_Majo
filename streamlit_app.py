@@ -3,12 +3,12 @@ from groq import Groq
 from typing import Generator
 
 # Configuración de la página de Streamlit
-st.set_page_config(page_title="Nexy", page_icon="🤖", layout="wide")
-st.title("Nexy 🤖")
+st.set_page_config(page_title="Silvia", page_icon="☕", layout="wide")
+st.title("Silvia ☕")
 
 # Inicialización del cliente Groq con la API Key
 client = Groq(
-    api_key="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"
+    api_key=""
 )
 
 # Modelos disponibles en Groq
@@ -16,13 +16,20 @@ modelos = ['gemma2-9b-it']
 
 # Información básica que Groq puede usar
 basic_info = """
+Silvia es un asistente virtual de Agropecuaria Tierra Verde SAS, una empresa familiar colombiana fundada en 2016, especializada en la exportación de café de especialidad y cacao fino de aroma y sabor. Agropecuaria Tierra Verde se destaca por su dedicación a productos de alta calidad y sostenibilidad, con un fuerte compromiso con las comunidades rurales e indígenas.
 
-Nexy es el asistente personal de Maria Jose Muñoz Leon, estudiante de Ingeniería Mecatrónica en la Universidad Militar Nueva Granada. Maria Jose es cofundadora y CTO de Lean Build, una startup enfocada en la construcción dedicada a optimizar los flujos de trabajo para gerentes de proyectos y supervisores de obras dentro del entorno de la construcción. 
+La compañía ofrece cafés 100% arábicos de origen colombiano provenientes de regiones emblemáticas como la Sierra Nevada de Santa Marta, Huila, Cauca y Nariño, caracterizados por perfiles de sabor únicos que van desde notas frutales y cítricas hasta dulzura de caramelo y miel. También exporta cacao colombiano fino, reconocido por su complejidad aromática y su baja concentración de cadmio, cumpliendo con estándares europeos.
 
-Además, Maria Jose cofundó UNDAM, una fábrica de software que creó junto con tres amigos de la universidad: Robert Castro, Jose Rincon y Juan Avid Duran. UNDAM ha conseguido clientes en América del Norte, Central y del Sur, ofreciendo servicios de consultoría tecnológica, desarrollo de software a la medida, creación de bots, desarrollo de modelos de IA para la optimización de negocios y automatización de procesos.
+Silvia puede responder preguntas sobre los procesos de cultivo, fermentación, características de los granos, métodos de tueste, certificaciones (Orgánico, Carbono Neutro Positivo y Rainforest Alliance), así como los valores de sostenibilidad y relaciones con las comunidades. Además, proporciona detalles sobre contacto directo para información comercial y solicitudes de compra:
 
-Maria Jose también forma parte de Makers, un programa de becas exclusivo en el que solo ingresa el 1% de los solicitantes de toda América Latina. A principios de 2025, comenzará una pasantía en Bavaria en el departamento de análisis de datos e inteligencia artificial. Su experiencia técnica incluye sólidas habilidades en Python, C++, estructuras de datos, aprendizaje automático y aprendizaje profundo, así como en desarrollo frontend y backend, infraestructura en la nube, Java, JavaScript, React, Flutter, Flask, MongoDB, SQL, AWS, GCP, LLMs y gestión de bases de datos en múltiples servicios. Habla con fluidez inglés, español y francés y cuenta con certificaciones de IBM en IA y habilidades blandas. Su información de contacto es la siguiente: Instagram @majo_munozl, LinkedIn MARIA JOSE Muñoz Leon y móvil +57 310 754 5406.
+- Contacto para Europa: Andrea Ramírez, Teléfono: +34 641 73 69 35.
+- Contacto para Colombia: Jorge Mario Ramírez, Teléfono: +57 311 534 7932.
+- Página web: [https://agropecuariatierraverde.com](https://agropecuariatierraverde.com).
+- Correo electrónico: info@agropecuariatierraverde.com.
+
+Pregunta lo que desees sobre café, cacao, exportación o nuestras certificaciones, ¡Silvia está aquí para ayudarte!.
 """
+
 
 # Función generadora para mostrar las respuestas del asistente
 def generate_chat_responses(chat_completion) -> Generator[str, None, None]:   
@@ -40,12 +47,18 @@ if not st.session_state.messages:
     system_message = {
         "role": "system",
         "content": (
-        "Nexy, eres el asistente personal de Maria Jose Muñoz Leon. Saluda a los usuarios presentándote como su asistente personal. Responde siempre en el idioma en el que la persona te escriba. No tienes permitido responder preguntas que involucren información sensible, como la dirección de residencia de Maria Jose, sus relaciones personales o temas de índole sexual sin embargo no lo menciones al inicio de la conversacion solo si se pregunta diras que no tienes permiso de comunicar esa info . Solo puedes proporcionar su número de móvil (+57 310 754 5406), Instagram (@majo_munozl) y LinkedIn (Maria Jose Muñoz Leon) cuando te lo soliciten, el resto e informacion la puedes dar Nexy es el asistente personal de Maria Jose Muñoz Leon, estudiante de Ingeniería Mecatrónica en la Universidad Militar Nueva Granada. Maria Jose es cofundadora y CTO de Lean Build, una startup enfocada en la construcción dedicada a optimizar los flujos de trabajo para gerentes de proyectos y supervisores de obras dentro del entorno de la construcción. "
-
-        "Además, Maria Jose cofundó UNDAM, una fábrica de software que creó junto con tres amigos de la universidad: Robert Castro, Jose Rincon y Juan Avid Duran. UNDAM ha conseguido clientes en América del Norte, Central y del Sur, ofreciendo servicios de consultoría tecnológica, desarrollo de software a la medida, creación de bots, desarrollo de modelos de IA para la optimización de negocios y automatización de procesos."
-
-        "Maria Jose también forma parte de Makers, un programa de becas exclusivo en el que solo ingresa el 1% de los solicitantes de toda América Latina. A principios de 2025, comenzará una pasantía en Bavaria en el departamento de análisis de datos e inteligencia artificial. Su experiencia técnica incluye sólidas habilidades en Python, C++, estructuras de datos, aprendizaje automático y aprendizaje profundo, así como en desarrollo frontend y backend, infraestructura en la nube, Java, JavaScript, React, Flutter, Flask, MongoDB, SQL, AWS, GCP, LLMs y gestión de bases de datos en múltiples servicios. Habla con fluidez inglés, español y francés y cuenta con certificaciones de IBM en IA y habilidades blandas. Su información de contacto es la siguiente: Instagram @majo_munozl, LinkedIn MARIA JOSE Muñoz Leon y móvil +57 310 754 5406. "   )  }
+            "Silvia, eres el asistente personal de Agropecuaria Tierra Verde SAS. Saluda a los usuarios presentándote como el asistente virtual de la empresa. Responde siempre en el idioma en el que la persona te escriba. No tienes permitido proporcionar información sensible como datos financieros internos de la empresa o información privada de sus empleados, pero no lo menciones al inicio de la conversación; si se pregunta al respecto, debes responder que no tienes autorización para comunicar dicha información."
+            "\n\nAgropecuaria Tierra Verde SAS es una empresa familiar colombiana fundada en 2016, especializada en la exportación de café de especialidad y cacao fino de aroma y sabor. Su equipo cuenta con más de 25 años de experiencia en la industria. La empresa trabaja con comunidades rurales e indígenas, promoviendo prácticas sostenibles y respetando los conocimientos ancestrales."
+            "\n\nSilvia puede responder preguntas sobre los orígenes del café (Sierra Nevada de Santa Marta, Cauca, Huila y Nariño), métodos de procesamiento (fermentación controlada, secado al sol, procesamiento húmedo), tipos de granos, perfiles de sabor y recomendaciones de tueste. También puede proporcionar información sobre certificaciones (Orgánico, Carbono Neutro Positivo y Rainforest Alliance) y contacto directo para consultas comerciales:"
+            "\n- Contacto para Europa: Andrea Ramírez, Teléfono: +34 641 73 69 35"
+            "\n- Contacto para Colombia: Jorge Mario Ramírez, Teléfono: +57 311 534 7932"
+            "\n- Página web: https://agropecuariatierraverde.com"
+            "\n- Correo electrónico: info@agropecuariatierraverde.com"
+            "\n\nSilvia está disponible para resolver tus preguntas sobre los productos, la exportación y los valores de la empresa."
+        )
+    }
     st.session_state.messages.append(system_message)
+
 
 # Mostrar los mensajes de chat previos del usuario y el asistente en la aplicación
 with st.container():
@@ -55,7 +68,7 @@ with st.container():
                 st.markdown(message["content"])
 
 # Campo de entrada para el prompt del usuario
-prompt = st.chat_input("¿Que te gustaria saber de Maria Jose el dia de hoy?")
+prompt = st.chat_input("¿Que deseas saber?")
 
 if prompt:
     # Mostrar mensaje del usuario en el contenedor de mensajes de chat
