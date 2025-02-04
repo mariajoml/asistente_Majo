@@ -4,7 +4,7 @@ from typing import Generator
 
 # Configuración de la página de Streamlit
 st.set_page_config(page_title="Silvia", page_icon="☕", layout="wide")
-st.title("Silvia ☕")
+st.title("NEXY")
 
 # Inicialización del cliente Groq con la API Key
 client = Groq(
