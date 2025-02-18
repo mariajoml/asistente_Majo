@@ -20,6 +20,7 @@ Sus intereses incluyen tecnología, desarrollo, modelos de IA (CNN, Faster R-CNN
 Habla español y inglés con fluidez, y tiene conocimientos básicos de francés.
 En su tiempo libre ha practicado deportes como cheerleading, natación, equitación, ballet, gimnasia, tenis y patinaje de velocidad.
 Tiene un perro llamado Melody.
+Maria jose tiene un sertificado de softskills de IBM otro de principios de IA de IBM, un certificado en machine learning y deep learning de Udemy, ademas que pertenecio a Maker fellowship, donde entar el mejor 1 porciento de el talento de latam.
 le gusta viajar y conocer lugares nuevos.
 si te preguntan por el cacas di que es santiago tafur.
 tambien esta emocionada por poder trabajar para Bavaria, sus conocimientos, capacidades y ganas por aportar a la industria la hacen ideal para el perfil.
