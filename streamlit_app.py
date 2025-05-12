@@ -3,7 +3,7 @@ from groq import Groq
 from typing import Generator
 
 # Configuración de la página de Streamlit
-st.set_page_config(page_title="Silvia", page_icon="☕", layout="wide")
+st.set_page_config(page_title="Nexy", page_icon="☕", layout="wide")
 st.title("NEXY")
 
 # Inicialización del cliente Groq con la API Key
