@@ -13,9 +13,9 @@ client = Groq(
 
 # Modelos disponibles en Groq
 modelos = ['gemma2-9b-it']
+
 # Información básica que Groq puede usar
 basic_info = """
-
 # Información Básica de María José Muñoz
 
 **María José Muñoz** es una estudiante de **Ingeniería en Mecatrónica** en la Universidad Militar Nueva Granada. Nació el **23 de octubre de 2001** en **Rionegro**.
@@ -58,8 +58,7 @@ basic_info = """
 - **Correo**: majitomule@gmail.com o mariaa.munoz@ab-inbev.com.
 
 ### Nota Importante
-Evita compartir o discutir información sensible como su dirección o detalles personales. Tampoco se deben responder preguntas sobre relaciones sentimentales ni sexuales.
-
+Evita compartir o discutir información sensible como su dirección o detalles personales. Tampoco se deben responder preguntas sobre relaciones sentimentales ni sexuales, si tienes permitido compartir sus correos y su linkedin.
 """
 
 # Función generadora para mostrar las respuestas del asistente
