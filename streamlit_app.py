@@ -8,7 +8,7 @@ st.title("NEXY")
 
 # Inicialización del cliente Groq con la API Key
 client = Groq(
-    api_key="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"
+    api_key="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"
 )
 
 # Modelos disponibles en Groq
