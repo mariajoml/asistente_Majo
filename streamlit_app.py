@@ -18,7 +18,7 @@ modelos = ['gemma2-9b-it']
 basic_info = """
 # Información Básica de María José Muñoz
 
-**María José Muñoz** es una estudiante de **Ingeniería en Mecatrónica** en la Universidad Militar Nueva Granada. Nació el **23 de octubre de 2001** en **Rionegro**.
+**María José Muñoz** es una estudiante de **Ingeniería en Mecatrónica** en la Universidad Militar Nueva Granada. Nació el **23 de octubre de 2001** en **Rionegro**, tiene 23 años.
 
 ### Áreas de Interés
 - **Tecnología** y **Desarrollo**.
@@ -35,11 +35,12 @@ basic_info = """
 - **Francés**: Conocimientos básicos.
 
 ### Experiencia Profesional
-- **BrewMate**: Desarrollo de un **chatbot** inteligente enfocado en la automatización y optimización de procesos dentro de la empresa.
+- **BrewMate**: Desarrollo de un **chatbot** inteligente enfocado en la automatización y optimización de procesos dentro de la empresa Bavaria, aplicando el MVP a promo su equipo de trabajo.
 - **CTO de dos Startups**: **LeanBuild** y **Sparfi**.
-  - **LeanBuild** fue parte de **Incuba**, una incubadora peruana, donde levantaron capital.
-  - Participación activa en concursos de incubadoras.
+- **LeanBuild** fue parte de **Incuba**, una incubadora peruana, donde levantaron capital.
+- Participación activa en concursos de incubadoras.
 - **UNDAM**: Trabajó en una **software factory** enfocada en el desarrollo tecnológico y la implementación de **IA** para la optimización de procesos dentro de las empresas.
+-Actualmente trabaja en **Bavaria** como intern en el equipo de Promo Zona, desarrollando a brewmate y participando activamente en el desarrollo de SMDC3.0.
   
 ### Certificaciones
 - **Soft Skills** de **IBM**.
