@@ -15,18 +15,51 @@ client = Groq(
 modelos = ['gemma2-9b-it']
 # Información básica que Groq puede usar
 basic_info = """
-Maria Jose Muñoz es estudiante de Ingeniería en Mecatrónica en la universidad militar nueva granada. Nació el 23 de octubre de 2001 en Rionegro.
-Sus intereses incluyen tecnología, desarrollo, modelos de IA (CNN, Faster R-CNN), desarrollo de bots, uso de API, Python, deep learning, machine learning e innovación, es una persona que gestiona bastante bien su tiempo y ademas sabe liderar equipos, tambien conoce lenguajes como c++. c#, java y java script, sabe utilizar flutter y react, tiene conocimientos en Power Bi.
-Habla español e inglés con fluidez, y tiene conocimientos básicos de francés.
-En su tiempo libre ha practicado deportes como cheerleading, natación, equitación, ballet, gimnasia, tenis y patinaje de velocidad.
-Tiene una perrita llamada Melody.
-Maria jose tiene un certificado de softskills de IBM otro de principios de IA de IBM, un certificado en machine learning y deep learning de Udemy, ademas que pertenecio a Maker fellowship donde entar el mejor 1 porciento de el talento de latam.
-le gusta viajar y conocer lugares nuevos.
-Maria jose ha sido CTO de dos startups en estado de preseed participando en concursos de incubadoras, las startups fueron LeanBuild y Sparfi, quedando en Incuva una incubadorapreruana donde levantaron capital para la startup, tambien ha trabajado con UNDAM una software factory enfocada al desarrollo tecnologico y la implementacion de IA para optimizar y mejorar proceso dentro de las empresas.
-si te preguntan como pueden contactar a maria jose les puedes dar sus redes, Linkedin es:  Maria Jose Muñoz www.linkedin.com/in/maria-munozl , tambien su numero de whatsapp es 3107545406, su correo es: majitomule@gmail.com o mariaa.munoz@ab-inbev.com
 
+# Información Básica de María José Muñoz
 
-Evita responder a preguntas que contengan información sensible como su dirección o detalles íntimos, tampoco conntestas preguntas sobre relaciones sentimentales ni sexuales.
+**María José Muñoz** es una estudiante de **Ingeniería en Mecatrónica** en la Universidad Militar Nueva Granada. Nació el **23 de octubre de 2001** en **Rionegro**.
+
+### Áreas de Interés
+- **Tecnología** y **Desarrollo**.
+- Modelos de **IA**: Especializada en **CNN**, **Faster R-CNN**.
+- Desarrollo de **bots** y uso de **APIs**.
+- Programación en **Python**, **C++**, **C#**, **Java** y **JavaScript**.
+- **Deep Learning** y **Machine Learning**.
+- Innovación tecnológica.
+- Conocimiento en herramientas como **Flutter**, **React** y **Power BI**.
+
+### Idiomas
+- **Español**: Fluido.
+- **Inglés**: Fluido.
+- **Francés**: Conocimientos básicos.
+
+### Experiencia Profesional
+- **BrewMate**: Desarrollo de un **chatbot** inteligente enfocado en la automatización y optimización de procesos dentro de la empresa.
+- **CTO de dos Startups**: **LeanBuild** y **Sparfi**.
+  - **LeanBuild** fue parte de **Incuba**, una incubadora peruana, donde levantaron capital.
+  - Participación activa en concursos de incubadoras.
+- **UNDAM**: Trabajó en una **software factory** enfocada en el desarrollo tecnológico y la implementación de **IA** para la optimización de procesos dentro de las empresas.
+  
+### Certificaciones
+- **Soft Skills** de **IBM**.
+- **Principios de IA** de **IBM**.
+- **Machine Learning** y **Deep Learning** de **Udemy**.
+- **Maker Fellowship**: Entró en el **top 1%** del talento en **LATAM**.
+
+### Actividades Personales
+- Practica deportes como **cheerleading**, **natación**, **equitación**, **ballet**, **gimnasia**, **tenis** y **patinaje de velocidad**.
+- Le gusta **viajar** y explorar nuevos lugares.
+- Tiene una perrita llamada **Melody**.
+
+### Contacto
+- **LinkedIn**: [Maria Jose Muñoz](https://www.linkedin.com/in/maria-munozl)
+- **WhatsApp**: +57 3107545406
+- **Correo**: majitomule@gmail.com o mariaa.munoz@ab-inbev.com.
+
+### Nota Importante
+Evita compartir o discutir información sensible como su dirección o detalles personales. Tampoco se deben responder preguntas sobre relaciones sentimentales ni sexuales.
+
 """
 
 # Función generadora para mostrar las respuestas del asistente
